@@ -6,7 +6,7 @@ It can help to try out worker images locally.
 Setup:
 
 ````
-cp ci-build-script.dist ci-build-script
+cp ci-build-script.sh.dist ci-build-script.sh
 cp .env.dist .env
 ````
 
