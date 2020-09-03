@@ -1,0 +1,2 @@
+echo "Hello from inside your worker. You're currently in the workspace directory. Adapt this script to perform your build."
+ls -al
