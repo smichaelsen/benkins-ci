@@ -11,6 +11,6 @@ cp ci-build-script.sh workspace/
 
 # start worker
 docker run -d -v $PWD/workspace:/workspace --name benkins_worker -w /workspace $IMAGE
-docker ps
 docker exec -ti benkins_worker sh ci-build-script.sh
 docker stop benkins_worker
+docker rm benkins_worker
