@@ -1,6 +1,6 @@
 # Benkins
 
-These scripts roughly mimics what a CI server does when starting jobs on workers.
+This script roughly mimics what a CI server does when starting jobs on workers.
 It can help to try out worker images locally.
 
 Setup:
