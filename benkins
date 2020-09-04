@@ -4,5 +4,11 @@ CMD=$1
 
 if [ "$CMD" = "run" ]; then
   source .env
-  REPOSITORY_URL=$REPOSITORY_URL BRANCH=$BRANCH IMAGE=$IMAGE ./src/trigger_build.sh
+  LOCAL_WORKSPACE=${PWD}/workspace
+
+  REPOSITORY_URL=$REPOSITORY_URL \
+    LOCAL_WORKSPACE=$LOCAL_WORKSPACE \
+    BRANCH=$BRANCH \
+    IMAGE=$IMAGE \
+    ./src/trigger_build.sh
 fi
