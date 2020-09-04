@@ -1,14 +1,6 @@
-echo "Building ${BRANCH} branch of ${REPOSITORY_URL} with image ${IMAGE}.\n"
-echo "Local workspace path: ${LOCAL_WORKSPACE}"
+#!/usr/bin/env sh
 
-# clear workspace if it is safe
-case $LOCAL_WORKSPACE/ in
-  $PWD/*) echo "Clearing workspace"; rm -rf $LOCAL_WORKSPACE;;
-  *) echo "Local workspace is not safe to delete! Aborting."; exit 200;;
-esac
-
-# checkout project in workspace
-git clone -b $BRANCH --depth 1 $REPOSITORY_URL $LOCAL_WORKSPACE
+echo "\nBuilding ${BRANCH} with image ${IMAGE}."
 
 # copy ci build script into workspace
 cp ci-build-script.sh ${LOCAL_WORKSPACE}/

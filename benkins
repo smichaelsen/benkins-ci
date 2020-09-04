@@ -9,6 +9,10 @@ if [ "$CMD" = "run" ]; then
   REPOSITORY_URL=$REPOSITORY_URL \
     LOCAL_WORKSPACE=$LOCAL_WORKSPACE \
     BRANCH=$BRANCH \
+    ./src/checkout_project.sh
+
+  LOCAL_WORKSPACE=$LOCAL_WORKSPACE \
+    BRANCH=$BRANCH \
     IMAGE=$IMAGE \
     ./src/trigger_build.sh
 fi
