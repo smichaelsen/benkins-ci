@@ -15,5 +15,5 @@ Adjust the values in the `.env` file to your needs.
 Usage:
 
 ````
-./trigger_build
+./benkins run
 ````

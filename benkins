@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+CMD=$1
+
+if [ "$CMD" = "run" ]; then
+  source .env
+  REPOSITORY_URL=$REPOSITORY_URL BRANCH=$BRANCH IMAGE=$IMAGE ./src/trigger_build.sh
+fi

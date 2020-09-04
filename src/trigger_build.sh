@@ -1,4 +1,4 @@
-source .env
+echo "Building ${BRANCH} branch of ${REPOSITORY_URL} with image ${IMAGE}"
 
 # clear workspace
 rm -rf workspace
