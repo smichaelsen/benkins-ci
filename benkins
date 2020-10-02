@@ -4,6 +4,9 @@ CMD=$1
 
 if [ "$CMD" = "run" ]; then
   source .env
+
+  ./src/generate_ssh_key.sh
+
   LOCAL_WORKSPACE=${PWD}/workspace
 
   REPOSITORY_URL=$REPOSITORY_URL \

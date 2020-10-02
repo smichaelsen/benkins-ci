@@ -9,4 +9,4 @@ case $LOCAL_WORKSPACE/ in
 esac
 
 # checkout project in workspace
-git clone -b $BRANCH --depth 1 $REPOSITORY_URL $LOCAL_WORKSPACE
+GIT_SSH_COMMAND='ssh -i keys/key -o IdentitiesOnly=yes' git clone -b $BRANCH --depth 1 $REPOSITORY_URL $LOCAL_WORKSPACE

@@ -1,3 +1,4 @@
 /.env
 /ci-build-script.sh
+/keys
 /workspace
